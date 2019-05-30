@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 new jBox('Tooltip', {
   attach: '#Tooltip-1',
-  content: 'This is a basic jBox tooltip'
+  content: '这里是渲染测试的入口，仅限PC'
 });
 
 
@@ -20,7 +20,7 @@ new jBox('Tooltip', {
   },
   outside: 'x',
   pointer: 'top:15',
-  content: 'You have many options to position and animate your jBoxes',
+  content: '这个没有加入',
   animation: 'move'
 });
 
@@ -109,7 +109,7 @@ new jBox('Tooltip', {
     y: 'center'
   },
   outside: 'x',
-  content: 'Scroll up and down or resize your browser, I will adjust my position!<br><br>Press [ESC] or click anywhere to close.',
+  content: '这是一个测试窗口，按ESC或空白处关闭xD.',
   onOpen: function() {
     this.source.addClass('active').html('Now scroll');
   },
