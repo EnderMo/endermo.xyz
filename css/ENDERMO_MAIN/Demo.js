@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 new jBox('Tooltip', {
   attach: '#Tooltip-1',
-  content: '这里是渲染测试的入口，仅限PC'
+  content: '这好像是一个入口......'
 });
 
 
