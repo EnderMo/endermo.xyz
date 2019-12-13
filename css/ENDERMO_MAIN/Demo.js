@@ -11,6 +11,11 @@ new jBox('Tooltip', {
 
 
 new jBox('Tooltip', {
+  attach: '#t1',
+  content: '这好像是一个入口......'
+});
+
+new jBox('Tooltip', {
   attach: '#Tooltip-2',
   theme: 'TooltipBorderThick',
   width: 200,
@@ -346,4 +351,3 @@ var getTitle = function () {
 
 
 });
-
