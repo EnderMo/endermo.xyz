@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>//</title>
+<style type="text/css">
+canvas {
+    border: 1px solid rgba(255,255,255,.09);
+}
+</style>
+</head>
+<body>
+<canvas id="tutorial" width="1920" height="1920"></canvas>
+<script type="text/javascript">
+function draw(){
+    var canvas = document.getElementById('tutorial');
+    if(!canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "rgba(113,66,128)";
+      //绘制矩形
+    ctx.fillRect (10, 10, 255, 259);
+    ctx.fillStyle = "rgba(0,0,200,.5)";
+    ctx.fillRect (200, 190, 235, 245);
+    ctx.fillStyle = "rgba(10,168,99,.5)";
+    ctx.fillRect (900,-23,265,256);
+    ctx.fillStyle = "rgba(255,189,40,.5)";
+    ctx.fillRect (600,213,265,256);
+    ctx.fillStyle = "rgba(10,168,99,.5)";
+    ctx.fillRect (360,413,265,256);
+}
+draw();
+</script>
+</body>
+</html>
