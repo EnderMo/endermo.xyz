@@ -1,0 +1,144 @@
+<!doctype html>
+<html> 
+   <head>
+	   <title>末影小末-EnderMo官方网站</title>
+  <meta charset="utf-8">
+       <style type="text/css">
+        .top{
+    /* 设置宽度高度背景颜色 */
+    height: auto; /*高度改为自动高度*/
+    width:100%;
+    margin-left: 0;
+    background:rgba(117,117,117,1.00);
+    position: fixed; /*固定在顶部*/
+    top: 0;/*离顶部的距离为0*/
+    margin-bottom: 5px;
+}
+.top ul{
+    /* 清除ul标签的默认样式 */
+    width: auto;/*宽度也改为自动*/
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    /* margin-top: 0;          */
+    padding: 0;
+
+}
+.top li {
+    float:left; /* 使li内容横向浮动，即横向排列  */
+    margin-right:2%;  /* 两个li之间的距离*/
+    position: relative;
+    overflow: hidden;
+}
+
+.top li a{
+   /* 设置链接内容显示的格式*/
+    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+    color:white;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+    text-decoration: none; /* 去除下划线 */
+    
+}
+.top li a:hover{
+    /* 鼠标选中时背景变为黑色 */
+    background-color: #111;
+}
+.top ul li ul{
+    /* 设置二级菜单 */
+    margin-left: -0.2px;
+    background:rgba(60,60,60,1.00);
+    position: relative;
+    display: none; /* 默认隐藏二级菜单的内容 */
+
+}
+.top ul li ul li{
+    /* 二级菜单li内容的显示 */
+    
+    float:none;
+    text-align: center;
+}
+.top ul li:hover ul{
+    /* 鼠标选中二级菜单内容时 */
+    display: block;
+}
+body{
+    background:#eff3f5;
+}
+		   
+       </style>
+        <body>
+            <div class="top">
+                   <center> 
+                    <ul>
+                    <li><a href="#">主站</a></li>
+						<li><a href="dynamic.endermo.xyz">动态</a></li>
+						<li><a href="Hub/VertexLab/?index=b01-711-9"><strong>VertexLab</strong></a></li>
+                    <li><a href="/Hub/DownStation/index.html">下载站</a></li>
+						<li>
+						<a href="#">传送门</a>
+						<ul>
+						<li>t</li>
+						</ul>
+                    <li>
+                        <a href="#">FAQ</a>
+                        <ul>
+                            <li><a href="/document/FAQ/index.html">常见问题解答</a></li>
+							<li><a href="files/faq/1.html">疑难问题解答</a></li>
+                            <li><a href="document/ABOUT/aboutus.html">关于我们</a></li>
+                        </ul>
+                    </li>        
+                      </ul>
+                    </center> 
+            </div>
+			<!—主站横幅,CSS是用来让图片适应宽度的哈—>
+		<div class="banner"
+                    <link rel="stylesheet" href="css/IMG.css">
+			<a href="http://db.endermo.xyz/downloads/EMOS着色器.MCPACK"><img src="http://db.endermo.xyz/banner/B4893E71-0A47-44F9-B457-854C2C6BA6F4.jpeg" width="100%" height="100%"></a>
+	   </div>
+<!—演示页面样式—>
+<link rel="stylesheet" type="text/css" href="css/ENDERMO_MAIN/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/ENDERMO_MAIN/reset.css">
+
+
+<!—主要样式—>
+<link rel="stylesheet" href="css/ENDERMO_MAIN/jBox.all.css">
+<link rel="stylesheet" href="css/ENDERMO_MAIN/Demo.css">
+<body>
+
+
+<main class="container">
+
+<h2>测试区</h2>
+<div class="targets-wrapper">
+<link href="https://endermo.xyz/css/ENDERMO_MAIN/Demo.css" rel="stylesheet" type="text/css">
+<div id="Tooltip-1" class="target"><a href="EnderMo/Shading/TEST/index.html">渲染测试</div></a> <!—若要更改提示窗文字，打开demo.js—> 
+<div id="t1" class="target"><a href="Hub/test.html">TestHub</div></a> <!—若要更改提示窗文字，打开demo.js—> 
+<div id="Tooltip-3" class="target-click">未加入</div>
+</div>
+
+<h2>窗体测试</h2>
+
+<div class="targets-wrapper">
+<div id="Modal-1" class="target-click">未加入</div> <!—若要更改提示窗文字，打开demo.js—> 
+<div id="Modal-2" class="target-click">未加入</div> <!—若要更改提示窗文字，打开demo.js—> 
+<div id="Modal-3" class="target-click">未加入</div> <!—若要更改提示窗文字，打开demo.js—> 
+<div class="target-click" data-confirm onClick="new jBox('Notice', {content: '=）', color: 'green', attributes: {y: 'bottom'}})">Click</div>
+</div>
+<h2>Notice</h2>
+
+<div class="targets-wrapper">
+<div id="Notice-1" class="target-notice">未加入</div>
+	
+</main>
+
+<script src="css/ENDERMO_MAIN/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="css/ENDERMO_MAIN/jBox.all.js"></script>
+<script src="css/ENDERMO_MAIN/Demo.js"></script>
+</div>
+	
+</div>
+</body>			
+</html>
