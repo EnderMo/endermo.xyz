@@ -7,7 +7,10 @@
 这里现在还是一个正在建造的网站，一个Minecraft资源站--目前正在开发VertexLab工程。
 
 ```markdown
-Syntax highlighted code block
+- 小末的bilibili：373454723
+QQ：2016860442
+API：api.endermo.xyz
+
 
 # Header 1
 ## Header 2
