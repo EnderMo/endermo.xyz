@@ -4,7 +4,6 @@
 
 ### 关于
 
-这里现在还是一个正在建造的网站，一个Minecraft资源站--目前正在开发VertexLab工程。
 
 ```markdown
 - 小末的bilibili：373454723
