@@ -38,6 +38,13 @@ body{
 	transition: 0.2s;
 	text-decoration: none;
 } /* 标题栏列表元素样式 */
+#header li:a{
+	padding: 0px 10px;
+	display: inline-block;
+	float: left;
+	transition: 0.2s;
+	text-decoration: none;
+} /* 标题栏列表元素样式 */
 #header li:hover{
 	color: #CCCCCC;
 	transform: scale(1.05);
