@@ -8,6 +8,7 @@
 	   	<link rel="icon" href="image/EnderStudio_LOGO.png"/>
 <link rel="stylesheet" type="text/css" href="css/left-side-menu.css">
 <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
 <link rel="stylesheet" href="css/ENDERMO_MAIN/jBox.all.css">
 <link rel="stylesheet" href="css/ENDERMO_MAIN/Demo.css">
 <link rel="stylesheet" type="text/css" href="css/ENDERMO_MAIN/normalize.css" />
@@ -82,6 +83,9 @@
 .top ul li:hover ul{
     /* 鼠标选中二级菜单内容时 */
     display: block;
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 1.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
 }
 .top ri {
     float:right; /* 使li内容横向浮动，即横向排列  */
