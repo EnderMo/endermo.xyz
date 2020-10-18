@@ -6,14 +6,17 @@
 		<meta name="keywords" content="末影小末 官方网站"/>
 		<meta name="description" content="末影小末的创作小站 qwq"/>
 	   	<link rel="icon" href="image/EnderStudio_LOGO.png"/>
-
+<link rel="stylesheet" type="text/css" href="css/left-side-menu.css">
+<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/left-side-menu.js"></script>
        <style type="text/css">
         .top{
     /* 设置宽度高度背景颜色 */
     height: auto; /*高度改为自动高度*/
     width:100%;
     margin-left: 0;
-    background:rgba(117,117,117,1.00);
+    background:rgba(37,42,51,1.00);
     position: fixed; /*固定在顶部*/
     top: 0;/*离顶部的距离为0*/
     margin-bottom: 5px;
@@ -160,6 +163,45 @@ body{
 			<!—主站背景,CSS是用来让图片适应宽度的qwq—>
 		<div style="background: rgb(73,74,95)">
 	   </div>
+ </div>
+<div class="left-side-menu" >
+    <div class="lsm-expand-btn">
+        <div class="lsm-mini-btn">
+            <label>
+                <input type="checkbox" checked="checked">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30" />
+                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55" />
+                    <path class="line--2" d="M0 50h80" />
+                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45" />
+                </svg>
+            </label>
+
+        </div>
+    <div class="lsm-container">
+        <div class="lsm-scroll" >
+            <div class="lsm-sidebar">
+                <ul>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>展开界面</span><i class="my-icon lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span>界面1</span></a></li>
+                            <li><a class="active"  href="javascript:;"><span>界面2</span></a></li>
+                            <li><a href="javascript:;"><span>界面3</span></a></li>
+                            <li class="lsm-sidebar-item"1>
+                                <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>更多</span><i class="my-icon lsm-sidebar-more"></i></a>
+                                <ul>
+                                    <li><a href="javascript:;"><span>界面4</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
 <!—演示页面样式—>
 <link rel="stylesheet" type="text/css" href="css/ENDERMO_MAIN/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/ENDERMO_MAIN/reset.css">
