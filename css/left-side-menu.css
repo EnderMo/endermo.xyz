@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* 以下实际使用若已初始化可删除 .lsm-sidebar height父级需逐级设置为100%*/
 body,html{height: 100%;background: #E2E2E2}
-body,ul{margin:0;padding:0}
+body,ul{margin:0;padding:0;outline:none}
 body{font:14px "微软雅黑","宋体","Arial Narrow",HELVETICA;-webkit-text-size-adjust:100%;}
 li{list-style:none}
-a{text-decoration:none;}
+a{text-decoration:none;outline:none}
 /* 以上实际使用若已初始化可删除 */
 @keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
             0%{
