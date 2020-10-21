@@ -17,11 +17,28 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="css/ENDERMO_MAIN/jBox.all.js"></script>
-<script src="js/233.js" type="text/javascript"></script>
+<script src="js/value.js" type="text/javascript"></script>
 <script src="css/ENDERMO_MAIN/Demo.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/left-side-menu.js"></script>
-
+	<script>
+		var STRname = $.getUrlParam('tcolor');
+		var STRid = $.getUrlParam('id');
+		window.onload = function(){
+			$("#addname").val(STRname);
+			$("#addid").val(STRid);
+			function theme(){
+			if(STRname == 1){
+			document.body.style.backgroundColor = "#EFF4FF";
+			console.log('value：',STRname);
+		    }
+		    else{
+			console.log('id：',STRid);
+		    }
+			}
+			theme();
+		    }
+	</script>
 
 
        <style type="text/css">
@@ -114,24 +131,6 @@ body{
     background:#494A5F;
     /* 这里是颜色设定啦！QwQ还原色#eff3f5 */
 }	   
-	<script>
-		var STRname = $.getUrlParam('tcolor');
-		var STRid = $.getUrlParam('id');
-		window.onload = function(){
-			$("#addname").val(STRname);
-			$("#addid").val(STRid);
-			function theme(){
-			if(STRname == 1){
-			document.body.style.backgroundColor = "#EFF4FF";
-			console.log('value：',STRname);
-		    }
-		    else{
-			console.log('id：',STRid);
-		    }
-			}
-			theme();
-		    }
-	</script>
 	   <style>
 .button {
   background-color: #4CAC50;
