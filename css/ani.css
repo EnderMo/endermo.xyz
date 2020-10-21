@@ -8,3 +8,13 @@
     40% {opacity: 0;}  
     100% {opacity: 1;}  
 }  
+@keyframes move-appear{
+	from{
+		transform: translate(0,-10%);
+		opacity: 0;
+	}
+	to{
+		transform: translate(0,0);
+		opacity: 1;
+	}
+}
