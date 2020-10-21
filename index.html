@@ -17,6 +17,7 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="css/ENDERMO_MAIN/jBox.all.js"></script>
+<script src="js/233.js" type="text/javascript"></script>
 <script src="css/ENDERMO_MAIN/Demo.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/left-side-menu.js"></script>
@@ -113,25 +114,24 @@ body{
     background:#494A5F;
     /* 这里是颜色设定啦！QwQ还原色#eff3f5 */
 }	   
-       </style>
-	   <style type="text/css">
-			box {
-				width: 100%;
-				height: 50%;
-				background-color:rgba(253,253,253,0.30);
+	<script>
+		var STRname = $.getUrlParam('tcolor');
+		var STRid = $.getUrlParam('id');
+		window.onload = function(){
+			$("#addname").val(STRname);
+			$("#addid").val(STRid);
+			function theme(){
+			if(STRname == 1){
+			document.body.style.backgroundColor = "#EFF4FF";
+			console.log('value：',STRname);
+		    }
+		    else{
+			console.log('id：',STRid);
+		    }
 			}
-			
-			.center-in-center {
-				position: absolute;
-				top: 55%;
-				left: 50%;
-				-webkit-transform: translate(-50%, -50%);
-				-moz-transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				-o-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-		</style>
+			theme();
+		    }
+	</script>
 	   <style>
 .button {
   background-color: #4CAC50;
@@ -210,10 +210,10 @@ body{
                             <li><a class="active"  href="javascript:;"><span>TEST</span></a></li>
                             <li><a href="javascript:;"><span>TEST</span></a></li>
                             <li class="lsm-sidebar-item">
-                                <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>更多</span><i class="my-icon lsm-sidebar-more"></i></a>
+                                <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>主题</span><i class="my-icon lsm-sidebar-more"></i></a>
                                 <ul>
-                                    <li><a href="javascript:;"><span>TEST</span></a></li>
-                                    <li><a href="javascript:;"><span>TEST</span></a></li>
+                                    <li><a href="?tcolor=1"><span>LightMode</span></a></li>
+                                    <li><a href="https://endermo.xyz"><span>DarkMode</span></a></li>
 
                                 </ul>
                             </li>
