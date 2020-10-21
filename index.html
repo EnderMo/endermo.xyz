@@ -20,27 +20,7 @@
 <script src="css/ENDERMO_MAIN/Demo.js"></script>
 <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/left-side-menu.js"></script>
-<script src="js/value.js" type="text/javascript"></script>
-	<script>
-		var STRname = $.getUrlParam('tcolor');
-		var STRid = $.getUrlParam('id');
-		window.onload = function(){
-			$("#addname").val(STRname);
-			$("#addid").val(STRid);
-			function theme(){
-			if(STRname == 1){
-			document.body.style.backgroundColor = "#EFF4FF";
-			console.log('value：',STRname);
-		    }
-		    else{
-			console.log('id：',STRid);
-		    }
-			}
-			theme();
-		    }
-	</script>
-
-
+<script type="text/javascript" src="js/value.js"></script>
        <style type="text/css">
         .top{
     /* 设置宽度高度背景颜色 */
@@ -147,6 +127,24 @@ body{
 .button2 {background-color: #008CBA;position:absolute; top:50%; left:55%} /* Blue */
 .button3 {background-color: #f44336;position:absolute; top:50%; left:35%}
 </style>
+<script>
+		var STRname = $.getUrlParam('tcolor');
+		var STRid = $.getUrlParam('id');
+		window.onload = function(){
+			$("#addname").val(STRname);
+			$("#addid").val(STRid);
+			function theme(){
+			if(STRname == 1){
+			document.body.style.backgroundColor = "#EFF4FF";
+			console.log('value：',STRname);
+		    }
+		    else{
+			console.log('id：',STRid);
+		    }
+			}
+			theme();
+		    }
+	</script>
 	   
 	</head>
      
