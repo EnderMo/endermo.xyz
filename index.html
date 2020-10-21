@@ -112,18 +112,6 @@ body{
     /* 这里是颜色设定啦！QwQ还原色#eff3f5 */
 }	   
 	   <style>
-button {
-  background-color: #4CAC50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 #button {
   background-color: #4CAC50;
   border: none;
@@ -136,8 +124,8 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
-.button2 {background-color: #008CBA;position:absolute; top:50%; left:55%} /* Blue */
-.button3 {background-color: #f44336;position:absolute; top:50%; left:35%}
+.button2 {background-color: #008CBA;color: white;position:absolute; top:50%; left:55%} /* Blue */
+.button3 {background-color: #f44336;color: white;position:absolute; top:50%; left:35%}
 </style>
 <script>
 		var STRname = $.getUrlParam('tcolor');
@@ -240,7 +228,7 @@ button {
 <!—主要样式—>
 
 <div style="overflow:hidden;text-align: center;">
-	<button><a href="/Cube/" class="button button2">下载CommandCube</a><button>
+	<a href="/Cube/" class="button button2">下载CommandCube</a>
 	<a href="/Hub/" class="button button3">查看开源库</a>
 </dic>
 
