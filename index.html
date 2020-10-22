@@ -128,16 +128,19 @@ body{
 .button3 {background-color: #f44336;color: white;padding: 15px 32px;position:absolute; top:50%; left:35%}
 </style>
 <script>
-		var STRname = $.getUrlParam('tcolor');
+		var STRname = $.getUrlParam('theme');
 		var STRid = $.getUrlParam('id');
 		window.onload = function(){
 			$("#addname").val(STRname);
 			$("#addid").val(STRid);
 			function theme(){
-			if(STRname == 1){
+			if(STRname == 1000){
 			document.body.style.backgroundColor = "#EFF4FF";
 			console.log('value：',STRname);
 		    }
+		        if(STRname == 1001){
+				document.body.style.backgroundImage="url(image/b_reflect.png)"
+			}
 		    else{
 			console.log('id：',STRid);
 		    }
@@ -201,7 +204,8 @@ body{
                                 <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>主题</span><i class="my-icon lsm-sidebar-more"></i></a>
                                 <ul>
 				    <li><a href="https://endermo.xyz"><span>OriginalNight</span></a></li>
-                                    <li><a href="?tcolor=1"><span>OriginalLight</span></a></li>
+                                    <li><a href="?theme=1000"><span>OriginalLight</span></a></li>
+				    <li><a href="?theme=1001"><span>Reflection</span></a></li>
                                 </ul>
                             </li>
                         </ul>
