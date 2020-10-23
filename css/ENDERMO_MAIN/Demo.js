@@ -204,7 +204,7 @@ $('#Notice-1').click(function() {
   });
   
 });
-$('#Notice-1').click(function() {
+$('#Notice-theme').click(function() {
   
   new jBox('Notice', {
     content: '主题已切换',
