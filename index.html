@@ -137,7 +137,7 @@ body{
 			if(STRname == 1000){
 			document.body.style.backgroundColor = "#EFF4FF";
 			console.log('value：',STRname);
-		    }
+		        }
 		        if(STRname == 1001){
 				document.body.style.backgroundImage="url(image/b_reflect.png)"
 				document.body.style.height="100%"
@@ -154,7 +154,16 @@ body{
 			console.log('id：',STRid);
 		    }
 			}
+			function ui(){
+			if(STRid == 100){
+			document.body.style.overflow = "hidden";
+		        }
+				else{
+					console.log('id:',STRid);
+				}
+			}
 			theme();
+			ui();
 		    }
 	</script>
 	   
@@ -210,6 +219,12 @@ body{
                             <li><a class="active"  href="javascript:;"><span>TEST</span></a></li>
                             <li><a href="javascript:;"><span>TEST</span></a></li>
                             <li class="lsm-sidebar-item">
+				<a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>UI设置</span><i class="my-icon lsm-sidebar-more"></i></a>
+                                <ul>
+				    <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>滚动条显示</span><i class="my-icon lsm-sidebar-more"></i></a>
+				    <ul>
+					    <li><a href="&id=100"><span">隐藏</span></a></li>
+                                </ul>
                                 <a href="javascript:;"><i class="my-icon lsm-sidebar-icon "></i><span>主题</span><i class="my-icon lsm-sidebar-more"></i></a>
                                 <ul>
 				    <li><a href="https://endermo.xyz"><span id="Notice-theme">OriginalNight</span></a></li>
